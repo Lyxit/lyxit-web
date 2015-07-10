@@ -5,39 +5,93 @@
 }
 
 /* Projects */
-#houdy {
+.houdy {
   background: #FC6042;
 }
 
-#ttt {
+.ttt {
   background: #663399;
 }
 
-#quadrate {
+.quadrate {
   background: #2CC990;
 }
-#quadrate a .iconimage {
+.quadrate a .iconimage {
   background-image: url('../img/quad.png');
 }
 
-#bgg {
+.bgg {
   background: #3498DB;
 }
 
-#apk {
+.apk {
   background: #F5AB35;
 }
 
-#apk a .iconimage {
+.apk a .iconimage {
   background-image: url('../img/apk.png');
   background-size: 150px 150px;
 }
 
-#charades {
+.charades {
   background: #34495e;
 }
-#charades a .iconimage {
+.charades a .iconimage {
   background-image: url('../img/charad.png');
+}
+
+/* Project page */
+#project-hero {
+    /*background-image: radial-gradient(500px 500px, #dd4a55 0%, #a21f28 200%);*/
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    box-shadow: 0px 5px 10px #000;
+}
+
+#project-hero h1 {
+  padding-top: 0.5em;
+  font-size: 5em;
+}
+
+#project-hero span {
+  font-size: 2em;
+}
+
+#project-hero .images, #project-hero .appstore {
+  margin: 2em 0 2em 0;
+}
+
+.appstorelink img {
+  height: 70px;
+}
+
+#project-about {
+  background: url('../img/pttrn.png');
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  z-index: -1;
+  position: relative;
+}
+
+#project-description-long {
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+#project-video {
+  margin: 2em;
+}
+
+#project-footer {
+  background: #F5AB35;
+  box-shadow: 0px -1px 7px #000;
+  padding: 2em;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
 }
 
 /* ----------- Sections ------------- */
@@ -280,7 +334,7 @@ a:visited {
 }
 
 .navbar-collapse {
-    
+
 }
 
 .navbar-header button {
@@ -294,4 +348,9 @@ a:visited {
   font-size: 130%;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
 }
