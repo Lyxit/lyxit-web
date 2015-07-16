@@ -1,0 +1,5 @@
+module.exports = {
+  parts: ["project-head", "hero-subscribe", "foot"],
+  name: "Quadrate",
+  lead: "Testtesttest"
+};

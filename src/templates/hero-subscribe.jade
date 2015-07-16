@@ -1,0 +1,14 @@
+//- Quadrate class really shouldn't be here. Buuut..
+#project-hero.container-fluid.quadrate
+  .row
+    .col-xs-12.text-center
+      h1= name
+      span= lead
+  .row
+    .col-xs-12.col-md-6.col-md-offset-3
+      .input-group.input-group-lg
+        input.form-control(type="text",placeholder="Email",required="",data-validation-required-message="Please enter your email",aria-invalid="false")
+        span.input-group-btn: button.btn.btn-success(type="button") Subscribe
+  .row
+    .col-xs-12.text-center
+      img(src="../../assets/img/hero-image.png")

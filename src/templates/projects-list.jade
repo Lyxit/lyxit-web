@@ -1,0 +1,12 @@
+#projects
+  .container-fluid
+    .row
+      each val, key in projects
+        .project.col-md-4.col-sm-6.col-xs-12(class="#{ key }")
+          a(href="projects/#{ key }")
+            if val.soon
+              .iconimage.comingsoon
+            else
+              .iconimage
+            .appname= val.name
+            .appdescription= val.description

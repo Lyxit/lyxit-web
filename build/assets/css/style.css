@@ -56,6 +56,7 @@
 
 #project-hero span {
   font-size: 2em;
+  font-weight: 500;
 }
 
 #project-hero .images, #project-hero .appstore {
@@ -87,11 +88,16 @@
 #project-footer {
   background: #F5AB35;
   box-shadow: 0px -1px 7px #000;
-  padding: 2em;
+  padding: 2em 0 4em 0;
   color: white;
   font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+#project-footer h2 {
+  font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 2em;
 }
 
 /* ----------- Sections ------------- */
