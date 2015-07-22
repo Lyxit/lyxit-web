@@ -4,6 +4,14 @@ module.exports = {
       name: "Quadrate",
       description: "Avoid the falling blocks."
     },
+    apk: {
+      name: "AlkoPK",
+      description: "Find which alcohol gives you the most bang for the buck."
+    },
+    charades: {
+      name: "Charader från kodrader",
+      description: "Simply the best charade app yet."
+    },
     houdy: {
       name: "Houdy",
       description: "A game where you jump and shoot fireballs.",
@@ -18,14 +26,6 @@ module.exports = {
       name: "BoardGameGroups",
       description: "Manage your groups and play to reach the top!",
       soon: true
-    },
-    apk: {
-      name: "AlkoPK",
-      description: "Find which alcohol gives you the most bang for the buck."
-    },
-    charades: {
-      name: "Charader från kodrader",
-      description: "Simply the best charade app yet."
     }
   }
 }

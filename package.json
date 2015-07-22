@@ -1,12 +1,14 @@
 {
   "name": "lyxit-web",
-  "version": "0.0",
+  "version": "0.0.0",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "3.9.0",
     "gulp-jade": "0.4.2",
-    "gulp-less": "2.5.1",
+    "gulp-less": "3.0.3",
+    "less-plugin-autoprefix": "1.4.2",
     "gulp-concat": "2.1.7",
     "glob": "5.0.14",
+    "del": "1.2.0"
   }
 }

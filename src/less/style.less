@@ -1,0 +1,272 @@
+/* VARIABLES */
+
+@primary-color: #F5AB35;
+@secondary-color: #6C7A89;
+
+@houdy-color: #FC6042;
+@ttt-color: #663399;
+@quadrate-color: #2CC990;
+@bgg-color: #3498DB;
+@apk-color: #F5AB35;
+@charades-color: #34495e;
+
+@font-color: #FFF;
+
+/* MIXINS */
+
+.text() {
+  color: @font-color;
+  font-family: 'Lato', sans-serif;
+}
+
+.text-300() {
+  .text;
+  font-weight: 500;
+}
+
+.text-500() {
+  .text;
+  font-weight: 500;
+}
+
+.text-700() {
+  .text;
+  font-weight: 700;
+}
+
+/* PROJECTS */
+.houdy {
+  background: @houdy-color;
+}
+.ttt {
+  background: @ttt-color;
+}
+.quadrate {
+  background: @quadrate-color;
+  a .iconimage {
+    background-image: url('../img/quad.png');
+  }
+}
+.bgg {
+  background: @bgg-color;
+}
+.apk {
+  background: @apk-color;
+  a .iconimage {
+    background-image: url('../img/apk.png');
+  }
+}
+.charades {
+  background: @charades-color;
+  a .iconimage {
+    background-image: url('../img/charad.png');
+  }
+}
+
+/* SECTIONS */
+/* NAV */
+#navbar {
+  background-color: transparent;
+  border: none;
+  height: 65px;
+}
+
+.navbar-brand {
+  opacity: 0;
+  margin: 0;
+  margin-left: 10px;
+
+  img {
+    height: 50px;
+    padding-bottom:12px;
+  }
+}
+
+.navbar-header button {
+  margin: 15px;
+  background: rgba(250,250,250,0.9);
+}
+
+#menuitems ul li a {
+  .text;
+  font-size: 130%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* COMPANY HERO */
+#hero {
+  height: auto;
+  background: @secondary-color;
+  .text-300;
+  text-align: center;
+}
+
+.header {
+  margin: 75px 0px 100px 0px;
+  h1 {
+    font-size: 8em;
+    font-weight: 300; //Needed?
+  }
+  .slogan {
+    font-size: 1.5em;
+    font-weight: 300; //Needed?
+  }
+}
+
+/* COMPANY ABOUT */
+#about {
+  background: @secondary-color;
+  padding: 2em;
+  .text-300;
+
+  #description {
+    padding-bottom: 2em;
+
+    h2 {
+      font-size: 3.5em;
+      font-weight: 300; //Needed?
+    }
+
+    span {
+      font-size: 1.5em;
+    }
+  }
+
+  .img-profile {
+    padding: 2em;
+    padding-bottom: 0.5em;
+  }
+
+  .profile-name {
+    font-size: 2.3em;
+  }
+
+  .profile-title {
+    font-size: 1.5em;
+  }
+}
+
+/* CONTACT */
+#contact {
+  .text-700;
+  text-align: center;
+  background: url('../img/pttrn.png');
+
+  h2 {
+    padding-top: 20px;
+    font-size: 3.5em;
+    font-weight: 300;
+  }
+
+  input {
+    .text-300; //Needed?
+    padding: 30px;
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 3px solid #F5AB35;
+    border-radius: 0;
+    background: transparent;
+    font-size: 1.5em;
+  }
+
+  textarea {
+    margin-top: 15px;
+    padding: 10px;
+    border: 3px solid #F5AB35;
+    border-radius: 0;
+    background: transparent;
+    font-size: 1.5em;
+    resize: vertical;
+    min-height: 150px;
+    .text-300;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  input:placeholder, textarea:placeholder {
+    color: lightgray;
+  }
+}
+
+/* Social */
+
+#social {
+  padding: 100px 0 100px 0;
+  color: white;
+  transition: all .2s ease-in-out;
+  background: @primary-color;
+}
+
+.sociallink {
+  color: #FFF;
+
+  i {
+    transition: all 1s ease;
+  }
+
+  i:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Project tile */
+.comingsoon {
+  background-image: url('../img/soon.png') !important;
+}
+
+.project {
+  height: 335px;
+
+  a {
+    color: @font-color;
+  }
+
+  a:hover {
+    color: @font-color;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: @font-color;
+  }
+}
+
+.iconimage {
+  text-align: center;
+  width: 140px;
+  height: 140px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 35px;
+  background-size: 140px 140px;
+  background-position: center;
+}
+
+.appname {
+  height: 45px;
+  margin: 20px auto 0 auto;
+  .text-500;
+  font-size: 160%;
+  text-align: center;
+}
+
+.appdescription {
+  height: 70px;
+  margin: 10px auto 0 auto;
+  .text-300;
+  width: 90%;
+  font-size: 130%;
+  text-align: center;
+}
+
+/* ETC */
+
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}

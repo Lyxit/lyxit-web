@@ -1,5 +1,0 @@
-module.exports = {
-  parts: ["project-head", "hero-subscribe", "foot"],
-  name: "Houdy",
-  lead: "lolololoololololol"
-};

@@ -11,12 +11,7 @@ html(lang="en")
     link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
   body
     include templates/main-menu.jade
-    #hero
-      .container-fluid
-        .row
-          .header.col-xs-12
-            h1 LYXIT
-            span.slogan App & game developers from the land of moose and Smörgåsbord.
+    include templates/company-hero.jade
     include templates/projects-list.jade
     include templates/company-about.jade
     include templates/company-contact.jade
