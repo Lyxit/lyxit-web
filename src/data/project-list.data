@@ -1,30 +1,36 @@
 module.exports = {
   projects: {
-    quadrate: {
-      name: "Quadrate",
-      description: "Avoid the falling blocks."
-    },
-    apk: {
-      name: "AlkoPK",
-      description: "Find which alcohol gives you the most bang for the buck."
-    },
-    charades: {
-      name: "Charader från kodrader",
-      description: "Simply the best charade app yet."
-    },
     houdy: {
       name: "Houdy",
       description: "A game where you jump and shoot fireballs.",
+      color: "#FC6042",
       soon: true
     },
-    ttt: {
-      name: "TurnTurnTurn",
-      description: "A game where you turn and avoid stuff.",
-      soon: true
+    charades: {
+      name: "Charader från kodrader",
+      description: "Simply the best charade app yet.",
+      color: "#34495e"
     },
-    bgg: {
-      name: "BoardGameGroups",
-      description: "Manage your groups and play to reach the top!",
+    curatedcontrols: {
+      name: "Curated Controls",
+      description: "Hand picked collection of open source iOS components.",
+      color: "#3498DB",
+      web: true
+    },
+    quadrate: {
+      name: "Quadrate",
+      description: "Avoid the falling blocks.",
+      color: "#2CC990"
+    },
+    apk: {
+      name: "AlkoPK",
+      description: "Find which alcohol gives you the most bang for the buck.",
+      color: "#F5AB35"
+    },
+    secret: {
+      name: "Secret project",
+      description: "Unannounced title.",
+      color: "#663399",
       soon: true
     }
   }

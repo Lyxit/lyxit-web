@@ -1,67 +1,5 @@
-/* VARIABLES */
-
-@primary-color: #F5AB35;
-@secondary-color: #6C7A89;
-
-@houdy-color: #FC6042;
-@ttt-color: #663399;
-@quadrate-color: #2CC990;
-@bgg-color: #3498DB;
-@apk-color: #F5AB35;
-@charades-color: #34495e;
-
-@font-color: #FFF;
-
-/* MIXINS */
-
-.text() {
-  color: @font-color;
-  font-family: 'Lato', sans-serif;
-}
-
-.text-300() {
-  .text;
-  font-weight: 500;
-}
-
-.text-500() {
-  .text;
-  font-weight: 500;
-}
-
-.text-700() {
-  .text;
-  font-weight: 700;
-}
-
-/* PROJECTS */
-.houdy {
-  background: @houdy-color;
-}
-.ttt {
-  background: @ttt-color;
-}
-.quadrate {
-  background: @quadrate-color;
-  a .iconimage {
-    background-image: url('../img/quad.png');
-  }
-}
-.bgg {
-  background: @bgg-color;
-}
-.apk {
-  background: @apk-color;
-  a .iconimage {
-    background-image: url('../img/apk.png');
-  }
-}
-.charades {
-  background: @charades-color;
-  a .iconimage {
-    background-image: url('../img/charad.png');
-  }
-}
+@import 'vars';
+@import './src/less/mixins';
 
 /* SECTIONS */
 /* NAV */
@@ -190,6 +128,10 @@
   input:placeholder, textarea:placeholder {
     color: lightgray;
   }
+
+  #contactForm {
+    margin-bottom: 2em;
+  }
 }
 
 /* Social */
@@ -216,10 +158,12 @@
 /* Project tile */
 .comingsoon {
   background-image: url('../img/soon.png') !important;
+  background: white;
 }
 
 .project {
   height: 335px;
+  overflow: hidden;
 
   a {
     color: @font-color;
@@ -239,12 +183,23 @@
   text-align: center;
   width: 140px;
   height: 140px;
-  background: #FFFFFF;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 35px;
   background-size: 140px 140px;
   background-position: center;
+}
+
+.webimage {
+  text-align: center;
+  width: 250px;
+  height: 195px;
+  background: none;
+  border-radius: 3px 3px 0px 0px;
+  margin: 0 auto;
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .appname {
