@@ -4,28 +4,37 @@ module.exports = {
       name: "Houdy",
       description: "A game where you jump and shoot fireballs.",
       color: "#FC6042",
-      soon: true
+      soon: true,
+      youtube: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
+      parts: [
+        'project-hero',
+        'project-video'
+      ]
     },
     charades: {
       name: "Charader från kodrader",
       description: "Simply the best charade app yet.",
-      color: "#34495e"
+      color: "#34495e",
+      link: "https://itunes.apple.com/us/app/charader-slumpade-och-hysteriskt/id981791201"
     },
     curatedcontrols: {
       name: "Curated Controls",
       description: "Hand picked collection of open source iOS components.",
       color: "#3498DB",
-      web: true
+      web: true,
+      link: "http://curatedcontrols.com"
     },
     quadrate: {
       name: "Quadrate",
       description: "Avoid the falling blocks.",
-      color: "#2CC990"
+      color: "#2CC990",
+      link: "https://itunes.apple.com/us/app/quadrate/id951334358"
     },
     apk: {
       name: "AlkoPK",
-      description: "Find which alcohol gives you the most bang for the buck.",
-      color: "#F5AB35"
+      description: "Find the student friendly beverages.",
+      color: "#F5AB35",
+      link: "https://itunes.apple.com/us/app/alkopk/id903733005"
     },
     secret: {
       name: "Secret project",

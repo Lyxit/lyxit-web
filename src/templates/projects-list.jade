@@ -4,18 +4,38 @@
       each val, key in projects
         .project.col-md-4.col-sm-6.col-xs-12(class="#{ key }")
           if val.web
-            a(href="projects/#{ key }")
-              .appname= val.name
-              .appdescription= val.description
-              if val.soon
-                .webimage.comingsoon
-              else
+            if val.soon
+              a
+                .appname= val.name
+                .appdescription= val.description
+                .webimage
+                  .comingsoon
+            else if val.link
+              a(href="#{ val.link }")
+                .appname= val.name
+                .appdescription= val.description
+                .webimage
+            else
+              a(href="projects/#{ key }")
+                .appname= val.name
+                .appdescription= val.description
                 .webimage
           else
-            a(href="projects/#{ key }")
-              if val.soon
-                .iconimage.comingsoon
-              else
-                .iconimage
-              .appname= val.name
-              .appdescription= val.description
+            if val.soon
+              a
+                .appimage
+                  .comingsoon
+                .appname= val.name
+                .appdescription= val.description
+            else if val.link
+              a(href="#{ val.link }")
+                .appimage
+                .appname= val.name
+                .appdescription= val.description
+            else
+              a(href="projects/#{ key }")
+                .appimage
+                .appname= val.name
+                .appdescription= val.description
+                .appmore
+                  p Read more

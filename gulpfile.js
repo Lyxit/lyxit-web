@@ -7,7 +7,9 @@ var glob              = require('glob'),
     jade              = require('gulp-jade'),
     concat            = require('gulp-concat'),
     inject            = require('gulp-inject'),
-    insert            = require('gulp-insert');
+    insert            = require('gulp-insert'),
+    async             = require('async'),
+    rename            = require('gulp-rename');
 
 /* DATA */
 
@@ -17,11 +19,12 @@ var paths = {
   src: './src/assets/**/*',
   build: './build/',
   less: './src/less/',
-  temp: './build/temp/'
+  temp: './build/temp/',
+  templates: './src/templates/'
 };
 
 /* TASKS */
-gulp.task('build', ['jade', 'css'], function() {
+gulp.task('build:index', ['index:jade', 'index:css'], function() {
   del([
     'build/temp/'
   ]);
@@ -37,12 +40,12 @@ gulp.task('clean', function() {
   ]);
 });
 
-gulp.task('insert', ['insert:colors', 'insert:styles']);
+gulp.task('index:insert', ['index:insert:colors', 'index:insert:styles']);
 
-gulp.task('insert:colors', function() {
+gulp.task('index:insert:colors', function() {
   var lesscolors = "";
 
-  var data = require(paths.project_data);
+  var data = projectData();
   for(var prop in data.projects) {
     lesscolors = lesscolors + '@' + prop + '-color: ' + data.projects[prop].color + ';';
   }
@@ -53,12 +56,12 @@ gulp.task('insert:colors', function() {
     .pipe(gulp.dest(paths.temp + 'less'));
 });
 
-gulp.task('insert:styles', function() {
+gulp.task('index:insert:styles', function() {
   var lesstyles = "";
 
-  var data = require(paths.project_data);
+  var data = projectData();
   for(var prop in data.projects) {
-    var type = data.projects[prop].web ? "web" : "icon";
+    var type = data.projects[prop].web ? "web" : "app";
     lesstyles = lesstyles + '.' + prop + '{ background: @' + prop + '-color; a .' + type + 'image { background-image: url("../img/' + prop + '.png")}}';
   }
 
@@ -68,7 +71,7 @@ gulp.task('insert:styles', function() {
     .pipe(gulp.dest(paths.temp + 'less'));
 });
 
-gulp.task('css', ['insert'], function() {
+gulp.task('index:css', ['index:insert'], function() {
     return gulp
     .src(paths.temp + 'less/style.less')
     .pipe(less({
@@ -77,12 +80,70 @@ gulp.task('css', ['insert'], function() {
     .pipe(gulp.dest(paths.build + 'assets/css/'));
 });
 
-gulp.task('jade', function() {
-    return gulp
+gulp.task('index:jade', function() {
+  return gulp
     .src(paths.index)
     .pipe(jade({
-        data: require(paths.project_data),
+        data: projectData(),
         pretty: true
     }))
     .pipe(gulp.dest(paths.build))
 });
+
+gulp.task('build:projects', function(done) {
+  var projects = projectArray();
+
+  var generateProject = function(prj) {
+    var prj = projects[i];
+    var partInsertion = partsForProject(prj);
+
+    return function (cb) {
+      gulp
+        .src(paths.templates + 'project-shell.jade')
+        .pipe(insert.append(partInsertion))
+        .pipe(jade({
+          data: prj,
+          pretty: true
+        }))
+        .pipe(rename('index.html'))
+        .pipe(gulp.dest(paths.build + 'projects/' + prj.key));
+    }
+  };
+
+  var tasks = [];
+  for (var i = 0; i < projects.length; i++) {
+    var prj = projects[i];
+    tasks.push(generateProject(prj));
+  }
+  async.parallel(tasks, function() {
+    console.log ('Finished build:projects');
+  });
+});
+
+var partsForProject = function(prj) {
+  if (prj.parts) {
+    var partInsertion = "";
+    for (var i = 0; i < prj.parts.length; i++) {
+      partInsertion = partInsertion + '    include ' + prj.parts[i] + '.jade\n';
+    }
+    return partInsertion + '    include foot.jade\n';
+  }
+  return "";
+}
+
+var projectData = function() {
+  return require(paths.project_data);
+}
+
+var projectArray = function() {
+  var data = projectData();
+  var projects = [];
+
+  for (var prop in data.projects) {
+    var prj = data.projects[prop];
+    prj.key = prop;
+    projects.push(prj);
+  }
+
+  return projects;
+}

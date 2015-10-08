@@ -155,10 +155,20 @@
   }
 }
 
+/* project vide */
+#video {
+  background: #00F;
+}
+
 /* Project tile */
 .comingsoon {
   background-image: url('../img/soon.png') !important;
-  background: white;
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 .project {
@@ -179,44 +189,49 @@
   }
 }
 
-.iconimage {
-  text-align: center;
+.appimage {
+  .icon;
+
   width: 140px;
   height: 140px;
   border-radius: 20px;
-  margin: 0 auto;
   margin-top: 35px;
   background-size: 140px 140px;
   background-position: center;
+  background-color: white;
 }
 
 .webimage {
-  text-align: center;
+  .icon;
+
   width: 250px;
-  height: 195px;
-  background: none;
+  height: 60%;
   border-radius: 3px 3px 0px 0px;
-  margin: 0 auto;
   background-size: auto;
   background-position: bottom;
-  background-repeat: no-repeat;
 }
 
 .appname {
-  height: 45px;
-  margin: 20px auto 0 auto;
+  margin: 30px auto 0 auto;
   .text-500;
   font-size: 160%;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .appdescription {
-  height: 70px;
-  margin: 10px auto 0 auto;
+  margin: 0 auto 0 auto;
   .text-300;
   width: 90%;
   font-size: 130%;
   text-align: center;
+  padding-bottom: 15px;
+}
+
+.appmore {
+  .text-300;
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 
 /* ETC */
