@@ -4,12 +4,8 @@ module.exports = {
       name: "Houdy",
       description: "A game where you jump and shoot fireballs.",
       color: "#FC6042",
-      soon: true,
-      youtube: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-      parts: [
-        'project-hero',
-        'project-video'
-      ]
+      link: "http://houdygame.com",
+      soon: true
     },
     charades: {
       name: "Charader från kodrader",
