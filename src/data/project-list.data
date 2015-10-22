@@ -8,7 +8,7 @@ module.exports = {
       soon: true
     },
     charades: {
-      name: "Charader från kodrader",
+      name: "Charader",
       description: "Simply the best charade app yet.",
       color: "#34495e",
       link: "https://itunes.apple.com/us/app/charader-slumpade-och-hysteriskt/id981791201"

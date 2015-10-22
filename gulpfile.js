@@ -25,7 +25,9 @@ var paths = {
 };
 
 /* TASKS */
-gulp.task('build:index', ['index:jade', 'index:css', 'press'], function() {
+gulp.task('build', ['build:index', 'press']);
+
+gulp.task('build:index', ['index:jade', 'index:css'], function() {
   del([
     'build/temp/'
   ]);
