@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- example file containing base tags -->
+
+<game>
+	<title>Lyxit</title>
+	<founding-date>May 28, 2014</founding-date>
+	<website>http://lyxit.se/</website>
+	<based-in>Uppsala, Sweden</based-in>
+
+	<press-contact>contact@lyxit.se</press-contact>
+	<phone>+46 70 28 59 006</phone>
+	<address>
+		<line>Sernanders Väg 5</line>
+		<line>75261 Uppsala</line>
+		<line>Sweden</line>
+	</address>
+
+	<socials>
+		<social>
+			<name>twitter.com/Lyxit</name>
+			<link>twitter.com/Lyxit</link>
+		</social>
+		<social>
+			<name>facebook.com/Lyxit</name>
+			<link>facebook.com/Lyxit</link>
+		</social>
+	</socials>
+
+	<description>
+		App and game developers from the land of IKEA &amp; Smörgåsbord.
+	</description>
+
+	<histories>
+		<history>
+			<header>History</header>
+			<text>Lyxit was started in 2014 by two guys studying Information Systems at Uppsala University. We released our first app during the summer of 2014: AlkoPK - a app that shows you how much alcohol you get for each krona spent at swedish Systembolaget.</text>
+		</history>
+	</histories>
+
+	<press-can-request-copy>TRUE</press-can-request-copy> <!-- can be true or false -->
+	<monetization-permission>monetize</monetization-permission> <!-- can be: 	false (no video allowed),
+																			 	ask (permission on case-per-case basis),
+																			 	non-commercial (no monetization allowed),
+																			 	monetize (full permission) -->
+
+	<credits>
+		<credit>
+			<person>Anton Gunnarsson</person>
+			<role>Founder</role>
+		</credit>
+		<credit>
+			<person>Andreas Lundgren</person>
+			<role>Founder</role>
+		</credit>
+	</credits>
+
+	<contacts>
+		<contact>
+			<name>Inquiries</name>
+			<mail>contact@lyxit.se</mail>
+		</contact>
+		<contact>
+			<name>Twitter</name>
+			<link>http://twitter.com/Lyxit</link>
+		</contact>
+		<contact>
+			<name>Facebook</name>
+			<link>http://facebook.com/Lyxit</link>
+		</contact>
+		<contact>
+			<name>Web</name>
+			<link>Lyxit.se</link>
+		</contact>
+	</contacts>
+</game>

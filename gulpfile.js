@@ -15,16 +15,17 @@ var glob              = require('glob'),
 
 var paths = {
   index: './src/index.jade',
+  press: './src/press/**/*',
   project_data: './src/data/project-list.data',
   src: './src/assets/**/*',
   build: './build/',
   less: './src/less/',
   temp: './build/temp/',
-  templates: './src/templates/'
+  templates: './src/templates/',
 };
 
 /* TASKS */
-gulp.task('build:index', ['index:jade', 'index:css'], function() {
+gulp.task('build:index', ['index:jade', 'index:css', 'press'], function() {
   del([
     'build/temp/'
   ]);
@@ -89,6 +90,12 @@ gulp.task('index:jade', function() {
     }))
     .pipe(gulp.dest(paths.build))
 });
+
+gulp.task('press', function() {
+  return gulp
+    .src(paths.press)
+    .pipe(gulp.dest(paths.build + 'press/'));
+})
 
 gulp.task('build:projects', function(done) {
   var projects = projectArray();

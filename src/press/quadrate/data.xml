@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>Quadrate</title>
+	<release-date>22 December, 2014</release-date>
+	<website>http://www.lyxit.se#quadrate/</website>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>Apple App Store</name>
+			<link>https://itunes.apple.com/us/app/quadrate/id951334358</link>
+		</platform>
+	</platforms>
+
+	<prices>
+		<price>
+			<currency>USD</currency>
+			<value>$0.99</value>
+		</price>
+		<price>
+			<currency>SEK</currency>
+			<value>9kr</value>
+		</price>
+	</prices>
+
+	<description>
+	Hi there. Quadrate is a game about squares. You are a square. The enemies are squares and the powerups are squares.
+	</description>
+
+	<history>
+	The idea behind Quadrate was initially conceived by Anton a late night in November. Over the course of a couple of hours the base of the game was already complete. After that many hard working hours turned it in to the polished game it is today.
+	</history>
+
+	<features>
+		<feature>Advanced physics!</feature>
+		<feature>Lots of powerups!</feature>
+		<feature>Multiple game modes!</feature>
+		<feature>Achievements!</feature>
+		<feature>Original soundtrack!</feature>
+	</features>
+
+	<additionals>
+		<additional>
+			<title>Original Soundtrack</title>
+			<description>Available for free from</description>
+			<link>http://soundcloud.com/unstaticvoid</link>
+		</additional>
+	</additionals>
+
+	<credits>
+		<credit>
+			<person>Anton Gunnarsson</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+		<credit>
+			<person>Andreas Lundgren</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+	</credits>
+</game>

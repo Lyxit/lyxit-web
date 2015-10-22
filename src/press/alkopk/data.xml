@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>AlkoPK</title>
+	<release-date>6 Mars, 2014</release-date>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>Apple App Store</name>
+			<link>https://itunes.apple.com/se/app/alkopk/id903733005</link>
+		</platform>
+	</platforms>
+
+	<prices>
+		<price>
+			<currency>USD</currency>
+			<value>$0.99</value>
+		</price>
+		<price>
+			<currency>SEK</currency>
+			<value>9kr</value>
+		</price>
+	</prices>
+
+	<description>
+	AlkoPK is a website and app that shows what alcoholic beverage from swedish Systembolaget has the most 'bang for the buck', so to speak. It calculates and displays how much alchol per swedish krona each beverage has. It automatically updates the products every day to stay in sync with available beverages.
+	</description>
+
+	<history>
+	AlkoPK was the first developed as a website in the spring of 2014. The app started out as a developement experiment trying out the iOS platform and is the first app released by Lyxit. It was developed during the summer of 2014 and released 5 August, 2014.
+	</history>
+
+	<additionals>
+		<additional>
+			<title>Swedish Systembolaget</title>
+			<description>All data from</description>
+			<link>http://www.systembolaget.se/Tjanster/Oppna-APIer/</link>
+		</additional>
+	</additionals>
+
+	<credits>
+		<credit>
+			<person>Anton Gunnarsson</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+		<credit>
+			<person>Andreas Lundgren</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+	</credits>
+</game>
