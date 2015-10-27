@@ -2,7 +2,7 @@ module.exports = {
   projects: {
     houdy: {
       name: "Houdy",
-      description: "A game where you jump and shoot fireballs.",
+      description: "Jump and shoot fireballs!",
       color: "#FC6042",
       link: "http://houdygame.com",
       soon: true
