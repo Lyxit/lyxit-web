@@ -5,20 +5,12 @@ module.exports = {
       description: "Jump and shoot fireballs!",
       color: "#FC6042",
       link: "http://houdygame.com",
-      soon: true
     },
     charades: {
       name: "Charader",
       description: "Simply the best charade app yet.",
       color: "#34495e",
       link: "https://itunes.apple.com/us/app/charader-slumpade-och-hysteriskt/id981791201"
-    },
-    curatedcontrols: {
-      name: "Curated Controls",
-      description: "Hand picked collection of open source iOS components.",
-      color: "#3498DB",
-      web: true,
-      link: "http://curatedcontrols.com"
     },
     quadrate: {
       name: "Quadrate",
@@ -33,9 +25,15 @@ module.exports = {
       link: "https://itunes.apple.com/us/app/alkopk/id903733005"
     },
     secret: {
+      name: "Secret game",
+      description: "Unannounced game.",
+      color: "#663399",
+      soon: true
+    },
+    secret2: {
       name: "Secret project",
       description: "Unannounced title.",
-      color: "#663399",
+      color: "#3498DB",
       soon: true
     }
   }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>Charader</title>
+	<release-date>April 1, 2015</release-date>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>Apple App Store</name>
+			<link>https://itunes.apple.com/us/app/charader-slumpade-och-hysteriskt/id981791201</link>
+		</platform>
+	</platforms>
+
+	<prices>
+		<price>
+			<currency>SEK</currency>
+			<value>FREE</value>
+		</price>
+	</prices>
+
+	<description>
+    Alla känner igen det sociala spelet charader. Tyvärr är det alldeles för dyrt att köpa ett vanligt charadspel där man snart känner igen alla charader, och det är alldeles för jobbigt att komma på egna charader. Det här är lösningen på alla våra problem. Med hjälp av superavancerade algoritmer slumpas varje charad fram. Detta ger över 3 miljoner olika kombinationer och du kommer aldrig se en likadan charad två gånger!
+
+    Om du ändå inte är nöjd med alla charader kan du låsa upp vuxenläget med ännu mer hysterisk humor! Det ger dubbelt så många charader, men kom ihåg att det inte är något för känsliga själar!
+
+    Starta appen, nudda skärmen och du är redan igång! Nudda igen och du får en ny charad. Svårare än så behöver det inte vara! Inga onödiga finesser som tar bort fokus från det viktigaste, charaden!
+
+    Tycker du att det faktiskt är lite för svårt? Byt till enkelt läge och visa endast enstaka ord istället! Passar perfekt för lagspelet eller att försöka förklara så många som möjligt på tid!
+	</description>
+
+	<credits>
+		<credit>
+			<person>Anton Gunnarsson</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+		<credit>
+			<person>Andreas Lundgren</person>
+			<role>Business &amp; Development, Lyxit</role>
+		</credit>
+	</credits>
+</game>
